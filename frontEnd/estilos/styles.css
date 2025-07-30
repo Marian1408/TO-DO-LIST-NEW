@@ -8,7 +8,7 @@
 
 /* VARIABLES OPCIONALES PARA COLORES */
 :root {
-    --primary-color: #36c1f4;
+    --primary-color: #0e4267;
     --accent-color: #bc5fd5;
     --light-bg: #f4f4f4;
     --dark-text: #212121;
@@ -17,7 +17,7 @@
 
 /* ESTILOS GLOBALES */
 body {
-    background: linear-gradient(135deg, #c7bdb3, #ebeaea);
+    background: linear-gradient(135deg, #d0cfd5, #dbe1da);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
@@ -32,16 +32,6 @@ main {
     justify-content: space-between;
 }
 
-/* BLOQUES PARA LISTA E IMAGEN */
-.left, .right {
-    flex: 1 1 45%;
-    min-width: 300px;
-    background-color: var(--light-bg);
-    border-radius: 10px;
-    padding: 20px;
-    display: grid;
-}
-
 /* LISTA */
 .left ul {
     list-style: disc inside;
@@ -49,21 +39,6 @@ main {
     display: grid;
 }
 
-/* IMAGEN */
-.right{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/* BOX GENÉRICO */
-
-
-/* ENCABEZADO */
 h1 {
     font-size: 44px;
     font-weight: normal;
@@ -80,6 +55,7 @@ h1 {
 }
 
 .noteBook {
+    padding-bottom: 15px;
     width: 150px;
     height: 150px;
 }
@@ -102,7 +78,7 @@ h1 {
 
 /* FORMULARIO */
 .principal {
-    background: linear-gradient(to right, var(--primary-color), #0d798a);
+    background: linear-gradient(to right, var(--primary-color), #7d9cd9);
     border-top: 20px solid #94bfd2;
     color: var(--white);
     padding: 50px 0;
@@ -111,6 +87,9 @@ h1 {
 
 .principal .formulario {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .principal .formulario input[type=text] {
@@ -122,7 +101,7 @@ h1 {
 
 input.error {
     border: 2px solid red;
-    color: black;
+    color: var(--accent-color);
 }
 
 .boton {
@@ -142,19 +121,29 @@ input.error {
 }
 
 /* LISTA DE TAREAS */
+.tareas{
+    padding-left: 40%;
+}
 .tareas .lista {
     list-style: none;
 }
 
 .tareas .lista li {
-    border-bottom: 1px solid #b6b6b6;
+    border-bottom: 3px solid #b6b6b6;
+    align-items: center;
 }
 
 .tareas .lista li a {
     color: #363535;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
     display: inline;
-    padding: 20px 0;
+    padding: 6px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tareas .lista li a:hover {
