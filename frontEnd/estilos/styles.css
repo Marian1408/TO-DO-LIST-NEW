@@ -112,6 +112,7 @@ input.error {
     display: block;
     justify-content: center;
     padding: 15px;
+    margen-:20px;
     border-radius: 12px;
 }
 
@@ -176,5 +177,32 @@ img:hover {
     width: 20px;
     height: 20px;
     transition: 0.5s ease-in-out;
+}
+/*ESTILOS PAR GREGAR, ELIMINAR Y EN PROCESO*/
+.en-proceso {
+  color: orange;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.lista li {
+  margin-bottom: 10px;
+}
+
+.lista button {
+  margin-left: 5px;
+  padding: 3px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button.proceso {
+  background-color: #ffd700;
+}
+
+button.eliminar {
+  background-color: #ff4d4d;
+  color: white;
 }
 
