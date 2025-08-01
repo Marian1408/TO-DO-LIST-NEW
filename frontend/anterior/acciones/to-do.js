@@ -1,6 +1,11 @@
 // Primero, obtenemos la lista de tareas desde la API
 fetch('http://localhost:8082/todos')
-  .then(response => response.json())
+  .then(response => {
+    // Agregamos el header Access-Control-Allow-Origin para permitir que se acceda desde cualquier origen
+    response.headers.set('Access-Control-Allow-Origin', '*');
+    
+    return response.json();
+  })
   .then(data => {
     // Luego, creamos un elemento para mostrar las tareas
     const tareaList = document.getElementById('lista');
