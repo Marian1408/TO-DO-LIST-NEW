@@ -1,9 +1,11 @@
-package org.acme;
+package org.acme.resources;
 
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.acme.models.Todo;
+
 import java.util.List;
 
 @Path("/todos")
@@ -37,9 +39,9 @@ public class TodoResource {
     public Response update(@PathParam("id") Long id, Todo updatedTodo) {
         return Todo.<Todo>findByIdOptional(id)
                 .map(todo -> {
-                    todo.title = updatedTodo.title;
-                    todo.completed = updatedTodo.completed;
-                    todo.priority = updatedTodo.priority;
+                    todo.setTitle(updatedTodo.getTitle());
+                    todo.setCompleted(updatedTodo.isCompleted());
+                    todo.setDescription(updatedTodo.getDescription());
                     return Response.ok(todo).build();
                 })
                 .orElse(Response.status(Response.Status.NOT_FOUND).build());

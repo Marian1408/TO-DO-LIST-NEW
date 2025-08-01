@@ -8,3 +8,7 @@ services:
       - "8082:8082"
     environment:
       - JAVA_OPTS_APPEND=-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager
+    command:
+      - "bash"
+      - "-c"
+      - "gradle build && /opt/jboss/container/java/run/run-java.sh"
