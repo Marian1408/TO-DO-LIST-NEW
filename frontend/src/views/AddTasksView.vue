@@ -12,5 +12,7 @@ import AddTaskComponent from '@/components/AddTaskComponent.vue'
   </div>
 </template>
 
+
+
 <style scoped>
 </style>
