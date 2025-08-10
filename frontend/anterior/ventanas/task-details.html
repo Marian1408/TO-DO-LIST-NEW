@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fbfa] group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8f2ec] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e1a13]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em]">TaskMaster</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Projects</a>
+              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Calendar</a>
+            </div>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e8f2ec] text-[#0e1a13] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#0e1a13]" data-icon="Bell" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGmQYqVs9L3xWXexzmQNcX-Mk_KrIUWoak9sItl3Z7TyiR4g3D740PoyvycYrSWyoVvkn6wZPj4GODsPP5ML4QWO8d64nWTaFRoZsQ8a8y_-ANY-xNxmGcEqetIMHNV3E6KoJ2HDoEW33gJZ2pcTeca5cMIJGBZi7l0dj20X99KQXV-7PxlmRxeeuhPLZhSC6cT1qtMUcFM7JoQ-kj54W7mZatiDwK4U8wKnenMfGQesKFQQZaWazTi5K_jpqclv91udte4eoUNHCX");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+            <div class="flex flex-wrap gap-2 p-4">
+              <a class="text-[#51946b] text-base font-medium leading-normal" href="#">Tasks</a>
+              <span class="text-[#51946b] text-base font-medium leading-normal">/</span>
+              <span class="text-[#0e1a13] text-base font-medium leading-normal">Grocery Shopping</span>
+            </div>
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0e1a13] tracking-light text-[32px] font-bold leading-tight">Grocery Shopping</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal">Due: July 20, 2024</p>
+              </div>
+            </div>
+            <h3 class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Description</h3>
+            <p class="text-[#0e1a13] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Purchase groceries for the week, including fresh produce, dairy, and pantry staples. Remember to check for any dietary restrictions or preferences within the
+              household.
+            </p>
+            <h3 class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Details</h3>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d1e6d9] py-5">
+                <p class="text-[#51946b] text-sm font-normal leading-normal">Project</p>
+                <p class="text-[#0e1a13] text-sm font-normal leading-normal">Personal</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d1e6d9] py-5">
+                <p class="text-[#51946b] text-sm font-normal leading-normal">Priority</p>
+                <p class="text-[#0e1a13] text-sm font-normal leading-normal">High</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d1e6d9] py-5">
+                <p class="text-[#51946b] text-sm font-normal leading-normal">Status</p>
+                <p class="text-[#0e1a13] text-sm font-normal leading-normal">In Progress</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#d1e6d9] py-5">
+                <p class="text-[#51946b] text-sm font-normal leading-normal">Assignee</p>
+                <p class="text-[#0e1a13] text-sm font-normal leading-normal">Sarah</p>
+              </div>
+            </div>
+            <h3 class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Attachments</h3>
+            <div class="flex flex-col p-4">
+              <div class="flex flex-col items-center gap-6 rounded-lg border-2 border-dashed border-[#d1e6d9] px-6 py-14">
+                <div class="flex max-w-[480px] flex-col items-center gap-2">
+                  <p class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">No attachments</p>
+                  <p class="text-[#0e1a13] text-sm font-normal leading-normal max-w-[480px] text-center">Drag and drop or browse to upload files</p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e8f2ec] text-[#0e1a13] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Upload Files</span>
+                </button>
+              </div>
+            </div>
+            <h3 class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Comments</h3>
+            <div class="flex w-full flex-row items-start justify-start gap-3 p-4">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhylH2hE57W0uwtzFPJUQIKBF2SHcJ3CRZTfRr1Rlvt9reUW2-g5yPEKvTNf_0mh7j7V55wIoF5XwcGdT1BCNHcgS6SJepgMb8EPQ5rILC8mD8mpzK_90rELwZHoNKZvu2BLlrUJGyMCQE4DLvweDHABLWk8zVQYBxUu08jsAx9_sr_lOlkJwhSE1P92dSmOVlTan0RTfFrikg8BYQjM7tKrvpqnL3ovrnpM3Q9jsdOD63OkC-Q95mWbJtxvxgEclP_xJirTpYszU8");'
+              ></div>
+              <div class="flex h-full flex-1 flex-col items-start justify-start">
+                <div class="flex w-full flex-row items-start justify-start gap-x-3">
+                  <p class="text-[#0e1a13] text-sm font-bold leading-normal tracking-[0.015em]">Sarah</p>
+                  <p class="text-[#51946b] text-sm font-normal leading-normal">July 18, 2024</p>
+                </div>
+                <p class="text-[#0e1a13] text-sm font-normal leading-normal">Remember to buy organic milk and gluten-free bread.</p>
+              </div>
+            </div>
+            <div class="flex items-center px-4 py-3 gap-3 @container">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 shrink-0"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQrOsvmk-OT0EYJbof1hO4QrLubhFx9ppU2jzrT0m_ulhsg6kK7oNpCazYnP5OpvBh9nLUB_eTiGsUgv7YL4CQryjmsfXy2YiaRX5aQxfZCe2ALZxRTn289bG0r__ps1pme5bUSvOD8QI2gc00toobLqk0qxq1G0gWImWQj8cl9P482_l89268LLO17Obr6frd4E2kq9GnbQRLVrZg09r0r92l04LZvtXKb2TwO8kwco0t_yxzdrcEBSeGiUUX0E08RJPL3Vb6pCCM");'
+              ></div>
+              <label class="flex flex-col min-w-40 h-12 flex-1">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                  <input
+                    placeholder="Add a comment"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e1a13] focus:outline-0 focus:ring-0 border-none bg-[#e8f2ec] focus:border-none h-full placeholder:text-[#51946b] px-4 rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                  <div class="flex border-none bg-[#e8f2ec] items-center justify-center pr-4 rounded-r-lg border-l-0 !pr-2">
+                    <div class="flex items-center gap-4 justify-end">
+                      <div class="flex items-center gap-1">
+                        <button class="flex items-center justify-center p-1.5">
+                          <div class="text-[#51946b]" data-icon="Hash" data-size="20px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                              <path
+                                d="M224,88H175.4l8.47-46.57a8,8,0,0,0-15.74-2.86l-9,49.43H111.4l8.47-46.57a8,8,0,0,0-15.74-2.86L95.14,88H48a8,8,0,0,0,0,16H92.23L83.5,152H32a8,8,0,0,0,0,16H80.6l-8.47,46.57a8,8,0,0,0,6.44,9.3A7.79,7.79,0,0,0,80,224a8,8,0,0,0,7.86-6.57l9-49.43H144.6l-8.47,46.57a8,8,0,0,0,6.44,9.3A7.79,7.79,0,0,0,144,224a8,8,0,0,0,7.86-6.57l9-49.43H208a8,8,0,0,0,0-16H163.77l8.73-48H224a8,8,0,0,0,0-16Zm-76.5,64H99.77l8.73-48h47.73Z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

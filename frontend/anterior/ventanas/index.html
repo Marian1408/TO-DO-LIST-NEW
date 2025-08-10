@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#f8fbfa] group/design-root overflow-x-hidden"
+      style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(14,26,19)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); font-family: Inter, &quot;Noto Sans&quot;, sans-serif;"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8f2ec] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e1a13]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em]">TaskMaster</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e8f2ec] text-[#0e1a13] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#0e1a13]" data-icon="Plus" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBg6nxMkxrAipRpr-ZtzCDnGf510d8RVyFwM6hAw1XA1mdVikBzxRWFkCp9tGD6rOpomxeWeKs5yXTsOqnSjrMDVxWf2M06-ufs6_0vdFe45GBk0MqBsiimtQzU8RYAfxjwZALd6lHzaOIYY6-YvgVPrZjG9jU_XFTpY522QdqsPJeuIsIGdfau5k0X_OjIokoyz-42fkTjG0F-M_nCU-jJLktDZTo0_FEwl0uS-a3VfMkPgRs1CgZz1oDHrRb26vMeV-zWaldNV2ps");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#0e1a13] tracking-light text-[32px] font-bold leading-tight min-w-72">My Tasks</p></div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Buy groceries</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Grocery shopping</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Finish project report</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Project deadline</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Attend team meeting</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Meeting with team</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Pay monthly bills</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Pay bills</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Schedule doctor's appointment</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Book appointment</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Plan summer vacation</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Plan vacation</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Go to the gym</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Workout</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Read 'The Great Gatsby'</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Read a book</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Call parents</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Call family</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-[72px] py-2">
+              <div class="flex size-7 items-center justify-center">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d1e6d9] border-2 bg-transparent text-[#39e079] checked:bg-[#39e079] checked:border-[#39e079] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d1e6d9] focus:outline-none"
+                />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e1a13] text-base font-medium leading-normal line-clamp-1">Clean the living room</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal line-clamp-2">Clean the house</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
