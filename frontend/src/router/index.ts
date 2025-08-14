@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AddTasksView from '@/views/AddTasksView.vue'
 import EditTasksView from '@/views/EditTasksView.vue'
+import ListTasksView from '@/views/ListTasksView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: AddTasksView,
+      name: 'index',
+      component: ListTasksView,
     },
     {
       path: '/add',
