@@ -11,5 +11,4 @@ import EditTaskComponent from '@/components/EditTaskComponent.vue'
     </div>
   </div>
 </template>
-<style scoped>
-</style>
+<style scoped></style>
